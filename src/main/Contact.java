@@ -19,12 +19,6 @@ abstract class Contact {
     abstract void edit();
 
     private boolean validateNumber(String number) {
-        /* String old_phoneNumberRegex = "\\+\\d([ -]\\d{2,})*|\\+\\([\\da-zA-Z]+\\)" +
-                "|((\\+\\d)[ -])?(\\(\\d{2,}\\)|\\d+)[ -]([\\da-zA-Z]{2,}[ -])+[\\da-zA-Z]{2,}|\\d*|" +
-                "([\\da-zA-Z]{2,}[ -])*[\\da-zA-Z]{2,}|\\([\\da-zA-Z]{2,}\\)|" +
-                "\\([\\da-zA-Z]{2,}\\)[ -]([\\da-zA-Z]{2,}[ -])*[\\da-zA-Z]{2,}|" +
-                "([\\da-zA-Z]{2,}[ -])\\([\\da-zA-Z]{2,}\\)([ -][\\da-zA-Z]{2,})*";
-         */
         String phoneNumberRegex = "\\+?(\\([\\da-zA-Z]+\\)|[\\da-zA-Z]+[ -]\\([\\da-zA-Z]{2,}\\)|[\\da-zA-Z]+)([ -][\\da-zA-Z]{2,})*";
         return number.matches(phoneNumberRegex);
     }
