@@ -1,6 +1,6 @@
 # Contacts (Java)
 
-This project involves a program to create contacts (like on the mobile phone) and search for people or organizations by name.
+This project involves a program to create contacts and search for people or organizations by name.
 
 * User can add two types of contacts: Person, and Organization. 
 * Each type has its own set of fields with some fields in common between both types. 
